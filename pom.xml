@@ -4,14 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.luv2code</groupId>
-	<artifactId>spring-security-demo</artifactId>
+	<artifactId>spring-security-demo-02-basic</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 
 	<name>spring-security-demo</name>
 
 	<properties>
-		<springframework.version>5.1.0.RELEASE</springframework.version>
+		<springframework.version>5.2.8.RELEASE</springframework.version>
+		<springsecurity.version>5.4.0</springsecurity.version>
 
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -24,6 +25,21 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springframework.version}</version>
+		</dependency>
+
+		<!-- Spring Security -->
+		<!-- spring-security-web and spring-security-config -->
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springsecurity.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${springsecurity.version}</version>
 		</dependency>
 
 		<!-- Servlet, JSP and JSTL support -->
