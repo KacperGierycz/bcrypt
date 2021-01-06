@@ -6,12 +6,15 @@
 <head>
 <title>Custom Login Page</title>
 
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<!-- 
 <style>
 .failed {
 	color: red;
 }
 </style>
-
+ -->
 </head>
 
 <body>
