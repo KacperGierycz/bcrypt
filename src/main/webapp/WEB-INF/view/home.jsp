@@ -29,20 +29,23 @@ Role(s) <security:authentication property="principal.authorities" />
 <hr>
 
 <!-- Add a link to point to leaders ... this is for the managers -->
+<security:authorize access="hasRole('MANAGER')">
 <p>
 	<a href="${pageContext.request.contextPath}/leaders">LeadereShip Meeting</a>
 	(Only for Manager peeps)
 
 </p>
+</security:authorize>
 
 <!-- Add a link to point to /systems ... this is for admins -->
 
+<security:authorize access="hasRole('ADMIN')">
 <p>
 <a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
 (Only for Admin peeps)
 </p>
 
-
+</security:authorize>
 <hr>
 
 <!--  Add a logout button -->
